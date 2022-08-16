@@ -1,0 +1,61 @@
+﻿@page
+@model RazorPizzeria.Pages.CreateModel
+@{
+}
+
+<h1>Create</h1>
+<hr />
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Create a new pizza</h5>
+            </div>
+            <div class="card-body">
+                <form method="post" class="mx-auto">
+                    <div class="mb-3">
+                        <label class="form-label">Pizza Name</label>
+                        <input type="text" asp-for="Pizza.PizzaName" asp-for="Pizza.ImageTitle" class="form-control" placeholder="Give your pizza a name..." />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tomato Sauce</label>
+                        <input type="checkbox" asp-for="Pizza.TomatoSause" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Cheese</label>
+                        <input type="checkbox" asp-for="Pizza.Cheese" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Peperoni</label>
+                        <input type="checkbox" asp-for="Pizza.Peperoni" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mushroom</label>
+                        <input type="checkbox" asp-for="Pizza.Mushroom" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tuna</label>
+                        <input type="checkbox" asp-for="Pizza.Tuna" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Pineapple</label>
+                        <input type="checkbox" asp-for="Pizza.Pineapple" />
+                    </div>
+                   <div class="mb-3">
+                        <label class="form-label">Ham</label>
+                        <input type="checkbox" asp-for="Pizza.Ham" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Beef</label>
+                        <input type="checkbox" asp-for="Pizza.Beef" />
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary mt-1" type="submit">Create</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+            </div>
+        </div>
+    </div>
+</div>
